@@ -11,7 +11,7 @@
 :root {
   --bg: #0a0a0a;
   --fg: #f0ece2;
-  --accent: #e8d5a3;
+  --accent: #fff;
   --dim: #3a3530;
   --mid: #7a7060;
 }
@@ -41,10 +41,17 @@ body::before {
   inset: 0;
   opacity: 0.4;
   pointer-events: none;
-  background-image: url("./red.jpeg");
   background-size: 100% auto;
   background-repeat: repeat-y;
   background-position: center;
+}
+
+.blue .grain {
+  background-image: url("./blue.jpeg");
+}
+
+.red .grain {
+  background-image: url("./red.jpeg");
 }
 
 .container {
@@ -100,7 +107,27 @@ body::before {
 }
 
 .instruction>li {
+  line-height: 1.6;
   list-style-position: inside;
+}
+
+.warning {
+  border-left: 2px solid currentColor;
+  padding: 0.75rem 1rem;
+  margin-block: 1rem;
+  opacity: 0.75;
+}
+
+.warning-title {
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.warning-body {
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .play-btn {
