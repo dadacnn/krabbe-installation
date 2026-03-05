@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Player</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="red">
+  <div class="grain"></div>
+  <div class="container">
+    <!-- <p class="label">Exhibition Audio</p> -->
+    <ol class="instruction">
+      <li>Take a seat on the stool.</li>
+      <li>Press play.</li>
+    </ol>
+
+    <div class="visualizer" id="viz"></div>
+
+    <button class="play-btn" id="playBtn" onclick="togglePlay()">
+      <div class="pulse"></div>
+      <div class="icon-play"></div>
+      <div class="icon-pause"><span></span><span></span></div>
+    </button>
+    <p class="status" id="status">TAP TO PLAY</p>
+  </div>
+
+  <audio id="audio" src="red.wav" loop></audio>
+
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
