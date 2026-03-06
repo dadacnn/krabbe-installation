@@ -296,6 +296,7 @@ h2 {
     p {
       margin-block: 1em;
       font-size: 14px;
+      line-height: 1.6;
     }
   }
 }
