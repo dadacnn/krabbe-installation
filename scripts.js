@@ -81,16 +81,16 @@ function togglePlay() {
 }
 
 // Auto-play attempt on load
-window.addEventListener('load', () => {
-  audio.play().then(() => {
-    if (!analyser) setupAnalyser();
-    isPlaying = true;
-    btn.classList.add('playing');
-    status.textContent = 'NOW PLAYING';
-    status.classList.add('on');
-    bars.forEach(b => b.classList.add('active'));
-    animateBars();
-  }).catch(() => {
-    // Blocked by browser — user must tap
-  });
-});
+// window.addEventListener('load', () => {
+//   audio.play().then(() => {
+//     if (!analyser) setupAnalyser();
+//     isPlaying = true;
+//     btn.classList.add('playing');
+//     status.textContent = 'NOW PLAYING';
+//     status.classList.add('on');
+//     bars.forEach(b => b.classList.add('active'));
+//     animateBars();
+//   }).catch(() => {
+//     // Blocked by browser — user must tap
+//   });
+// });
